@@ -4,28 +4,50 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#000000"><meta name="description" content="Zyhen AI 是自带密钥的手机 AI 客户端。预览同一段对话如何切换模型，了解支持的接口，下载 Android 安装包。">
   <link  rel="icon" href="media/icon.png"><title>Zyhen AI · 手机 AI 客户端</title>
-  <script type="module" crossorigin src="./assets/index-BVlm2Gvv.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-CoqXf8gA.css">
+  <script type="module" crossorigin src="./assets/index-DV8b8MsS.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BaDzP2Yn.css">
 </head>
 <body id="top">
   <a class="skip" href="#main">跳到正文</a>
   <header class="mast"><div class="wrap mast-inner"><a class="brand" href="#top" aria-label="Zyhen AI 首页">Zyhen<span>AI</span></a><nav aria-label="官网导航"><a href="#reader">对话演示</a><a class="nav-extra" href="#connect">模型接入</a><a class="nav-download" href="#install">安装指南</a></nav></div></header>
   <main id="main">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="intro"><h1 id="hero-title"><span class="title-line"><span>换个模型，</span></span><span class="title-line"><span>接着聊。</span></span></h1><p>把你常用的 AI 接到手机上。上一个模型写下的草稿，下一个模型可以接着改。</p>
-        <div class="actions"><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK <span aria-hidden="true">↓</span></a><a class="quiet" href="#reader">试试对话 <span aria-hidden="true">↘</span></a></div>
-        <small>v1.0.1 <b>·</b> 35.7 MB <b>·</b> Android 7.0+ / ARM64</small>
+    <section class="metal-hero" aria-labelledby="hero-title">
+      <div class="metal-art" aria-hidden="true"><video  muted loop playsinline preload="none" poster="media/silver-drop.webp" data-src="media/silver-drop.mp4" width="880" height="672"></video></div>
+      <div class="metal-copy wrap">
+        <span class="metal-label">Zyhen AI for Android</span>
+        <h1 id="hero-title"><span>换个模型，</span><span>接着聊。</span></h1>
+        <p>用自己的 API 密钥，把常用的 AI 接到手机上。<br>让一个模型起草，再让另一个接着改。</p>
+        <div class="metal-actions"><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK <span aria-hidden="true">↓</span></a><a class="metal-secondary" href="#reader">试试对话 <span aria-hidden="true">↗</span></a></div>
       </div>
-      <div id="optics" data-ui class="optics"><div class="lens-stage"><img  src="media/optics-spectrum.webp" alt="三片错落叠放、折射彩光的光学镜片" width="1100" height="924" fetchpriority="high"></div></div>
+      <div class="metal-foot wrap"><div class="metal-strip"><a href="#connect">四种模型接口</a><a href="#features">自动获取模型</a><a href="#install">安装与更新</a></div>
+      <div class="metal-meta"><span>v1.0.1 · 35.7 MB · ARM64</span><button type="button" class="edition-toggle" hidden>暂停金属动效</button></div></div>
+    </section>
+    <section id="atelier" class="atelier" aria-labelledby="atelier-title">
+      <div class="atelier-scene">
+        <div class="atelier-light" aria-hidden="true"></div>
+        <img  class="sculpture sculpture-left" src="media/herakles.webp" alt="" width="448" height="632" loading="lazy">
+        <img  class="sculpture sculpture-right" src="media/apollo.webp" alt="" width="470" height="600" loading="lazy">
+        <div class="atelier-copy"><h2 id="atelier-title">同一句话，<br>不同笔触。</h2><a href="#reader">看模型如何续写 <span aria-hidden="true">↓</span></a></div>
+        <div class="atelier-type" aria-hidden="true">Dialogue</div>
+        <div class="atelier-curtain" aria-hidden="true"><div class="meander"></div><span>Zyhen</span></div>
+        <button class="atelier-skip" type="button" hidden>跳过动画</button>
+      </div>
+      <details class="art-credit"><summary>雕像图源</summary><p>大都会艺术博物馆开放馆藏 · <a href="https://www.metmuseum.org/art/collection/search/250678">赫拉克勒斯头像</a>、<a href="https://www.metmuseum.org/art/collection/search/255057">阿波罗头像</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>，经裁切与调色。</p></details>
     </section>
     <section id="reader" class="chapter wrap" aria-labelledby="reader-title">
       <div class="chapter-intro"><h2 id="reader-title">一段对话，<br>两种写法。</h2><p>看看同一份文字怎么从初稿变成定稿。选一次续写，再把字号调到你读着舒服的大小。</p></div>
       <div id="reading-demo" data-ui class="reader"><p class="sample-status">对话示例</p><h3>给周六的夜游写一条邀请。</h3><p>周六傍晚六点，南门见。带上相机，沿河走到亮灯。</p><small>预设对话，仅在本页演示。</small></div>
     </section>
-    <section id="connect" class="chapter wrap" aria-labelledby="connect-title">
-      <div class="chapter-intro"><h2 id="connect-title">接入你的<br>模型服务。</h2><p>从服务商取得 API 密钥，在 App 里选择对应的协议并填写地址。能用哪些模型，取决于你的账号权限。</p></div>
-      <div class="connections"><div id="protocols"><h3>支持的接口</h3><p>OpenAI 兼容、OpenAI Responses、Claude Messages、Gemini。</p></div><dl class="facts"><div><dt>模型列表</dt><dd>保存服务配置后自动获取。服务商没有返回列表时，也可以手动填写模型 ID。</dd></div><div><dt>密钥和用量</dt><dd>密钥保存在手机的系统安全存储里。对话发送给你选定的服务商，费用按对方的规则结算。</dd></div><div><dt>换机与备份</dt><dd>在「设置 → 数据管理」导出对话和偏好。备份不含密钥，换机导入后需重新填写。</dd></div></dl></div>
-    </section>
+    <section id="features" class="feature-section wrap" aria-labelledby="features-title"><div class="feature-intro"><h2 id="features-title">从接入到开聊</h2><p>选模型、读回复、带走记录，都在手机上完成。</p></div><div class="feature-grid">
+        <article><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h11M4 18h7m5-2 2 2 4-5"/></svg><h3>模型自动发现</h3><p>保存服务配置，App 会取回可用模型。也可以手动添加模型 ID。</p></article>
+        <article><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h14l-3-3m7 13H7l3 3M17 7l-3 3M7 17l3-3"/></svg><h3>对话内换模型</h3><p>让另一个模型接着修改上一份草稿，保留这段对话的上下文。</p></article>
+        <article><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h17M3 12h12M3 18h6m4 0h.01"/></svg><h3>流式回复</h3><p>文字随生成逐步出现，可以一边阅读，一边想下一句。</p></article>
+        <article><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7a4 4 0 1 0 0 .1m-6 3L3 16v4h4v-3h3l3-3"/></svg><h3>自带 API 密钥</h3><p>密钥保存在手机的系统安全存储中，用量按所选服务商的规则结算。</p></article>
+        <article><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18l5-12 5 12M5 14h6m4-4h6m-3 0v8"/></svg><h3>阅读与外观</h3><p>切换浅色或深色主题，调整字号，让长回复更好读。</p></article>
+        <article><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7h16v-7M12 3v12m-4-4 4 4 4-4"/></svg><h3>导出与备份</h3><p>从「数据管理」导出对话和偏好。换机导入后，重新填写密钥即可。</p></article>
+      </div></section>
+    <section id="connect" class="chapter wrap" aria-labelledby="connect-title"><div class="chapter-intro"><h2 id="connect-title">接入你的<br>模型服务。</h2><p>在 App 里选择对应的协议并填写服务地址。能用哪些模型，取决于你的服务商和账号权限。</p></div><div id="protocols" class="connections"><h3>支持的接口</h3><p>OpenAI 兼容、OpenAI Responses、Claude Messages、Gemini。</p></div></section>
+    <section id="endless" class="passage" aria-labelledby="passage-title"><div class="passage-walls" aria-hidden="true"><div class="passage-plane left" style="--slot:0"><img  src="media/composer.webp" width="375" height="811" loading="lazy" alt=""></div><div class="passage-plane left" style="--slot:1"><img  src="media/models.webp" width="375" height="811" loading="lazy" alt=""></div><div class="passage-plane left" style="--slot:2"><img  src="media/appearance.webp" width="375" height="811" loading="lazy" alt=""></div><div class="passage-plane left" style="--slot:3"><img  src="media/settings.webp" width="375" height="811" loading="lazy" alt=""></div><div class="passage-plane right" style="--slot:0"><img  src="media/settings.webp" width="375" height="811" loading="lazy" alt=""></div><div class="passage-plane right" style="--slot:1"><img  src="media/appearance.webp" width="375" height="811" loading="lazy" alt=""></div><div class="passage-plane right" style="--slot:2"><img  src="media/models.webp" width="375" height="811" loading="lazy" alt=""></div><div class="passage-plane right" style="--slot:3"><img  src="media/composer.webp" width="375" height="811" loading="lazy" alt=""></div></div><div class="passage-copy"><h2 id="passage-title">走进 Zyhen</h2><a href="#preview">查看 App 原图 <span aria-hidden="true">↓</span></a></div><button type="button" class="edition-toggle" hidden>暂停画廊动效</button></section>
     <div id="inside" class="legacy-anchor"></div>
     <section id="preview" class="chapter wrap" aria-labelledby="preview-title"><div class="guide chapter-intro"><h2 id="preview-title">看一眼<br>真实界面。</h2><p>在模型列表里挑选下一位帮手，或到设置里调整阅读偏好。</p><div id="preview-controls"></div></div><div id="preview-screen"><figure class="viewer"><img  src="media/models.webp" alt="应用内的模型选择页" width="375" height="811" loading="lazy"></figure></div></section>
     <section id="install" class="chapter wrap" aria-labelledby="install-title"><div class="chapter-intro"><h2 id="install-title">装到手机上。</h2><p>Android 7.0 及以上，ARM64 设备。</p><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK <span aria-hidden="true">↓</span></a><small>v1.0.1 <b>·</b> 构建 4 <b>·</b> 35.7 MB</small></div><div id="questions"><details open><summary>第一次怎么安装？</summary><p>用安卓浏览器下载并打开 APK，在系统提示中确认安装。</p></details><details><summary>装过旧版怎么更新？</summary><p>保留旧版，打开新版安装包，选择「更新」。也可以在设置中检查更新。</p></details><details><summary>iPhone 可以安装吗？</summary><p>iOS 暂无公开安装版。</p></details></div></section>

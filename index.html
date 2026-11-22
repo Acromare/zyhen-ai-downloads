@@ -1,51 +1,34 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#f7f8fa" />
-  <meta name="description" content="Zyhen AI 安卓官方下载。用自己的 API 密钥接入模型，在手机上切换模型继续对话。" />
-  <link  rel="icon" href="media/icon.png" /><title>Zyhen AI · 安卓官方下载</title>
-  <script type="module" crossorigin src="./assets/index-U1jlk6iZ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BD56sOhc.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#000000"><meta name="description" content="Zyhen AI 是自带密钥的手机 AI 客户端。预览同一段对话如何切换模型，了解支持的接口，下载 Android 安装包。">
+  <link  rel="icon" href="media/icon.png"><title>Zyhen AI · 手机 AI 客户端</title>
+  <script type="module" crossorigin src="./assets/index-B7R6xMl6.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DCow-Tm6.css">
 </head>
-<body>
-  <header class="wrap mast" id="top">
-    <a class="brand" href="#top"><img  src="media/icon.png" alt="" width="36" height="36" />Zyhen AI</a>
-    <nav aria-label="官网导航"><a href="#preview">功能预览</a><a href="#install">安装与更新</a></nav>
-  </header>
-  <main>
+<body id="top">
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="mast"><div class="wrap mast-inner"><a class="brand" href="#top" aria-label="Zyhen AI 首页">Zyhen<span>AI</span></a><nav aria-label="官网导航"><a href="#reader">对话演示</a><a class="nav-extra" href="#connect">模型接入</a><a class="nav-download" href="#install">安装指南</a></nav></div></header>
+  <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="intro">
-        <h1 id="hero-title"><span class="title-line"><span>你的模型，</span></span><span class="title-line"><span>随身聊。</span></span></h1>
-        <p>在手机上接入你自己的 AI 服务。用一个模型起草，再换一个接着聊。</p>
-        <div class="actions"><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK<span aria-hidden="true">↓</span></a><a class="quiet" href="#preview">看看 App</a></div>
-        <small>v1.0.1 · 35.7 MB · Android 7.0+ · ARM64</small>
+      <div class="intro"><h1 id="hero-title"><span class="title-line"><span>换个模型，</span></span><span class="title-line"><span>接着聊。</span></span></h1><p>把你常用的 AI 接到手机上。上一个模型写下的草稿，下一个模型可以接着改。</p>
+        <div class="actions"><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK <span aria-hidden="true">↓</span></a><a class="quiet" href="#reader">试试对话 <span aria-hidden="true">↘</span></a></div>
+        <small>v1.0.1 <b>·</b> 35.7 MB <b>·</b> Android 7.0+ / ARM64</small>
       </div>
-      <figure class="art" aria-label="Zyhen AI 手机应用预览">
-        <picture><img  class="chrome" src="media/liquid-z.webp" alt="" width="800" height="640" /></picture>
-        <video id="reflection" width="800" height="640" muted playsinline preload="none" aria-hidden="true" data-src="media/liquid-z.mp4"></video>
-        <img  class="handset" width="375" height="811" src="media/composer.webp" alt="Zyhen AI 对话首页，输入框内可以选择模型和推理强度" />
-      </figure>
+      <div id="optics" data-ui class="optics"><div class="lens-stage"><img  src="media/optics-spectrum.webp" alt="三片错落叠放、折射彩光的光学镜片" width="1100" height="924" fetchpriority="high"></div></div>
     </section>
-    <section class="studio" id="preview" aria-labelledby="preview-title">
-      <div class="wrap studio-inner">
-        <div class="guide"><h2 id="preview-title">打开 App<br />看看里面。</h2><p>填好服务地址和密钥，Zyhen 会自动获取可用模型。接下来，就能在对话里切换。</p><div id="preview-controls"></div></div>
-        <div id="preview-screen"><figure class="viewer"><img  src="media/models.webp" alt="可搜索的模型选择列表" width="375" height="811" /><figcaption>模型选择</figcaption></figure></div>
-      </div>
+    <section id="reader" class="chapter wrap" aria-labelledby="reader-title">
+      <div class="chapter-intro"><h2 id="reader-title">一段对话，<br>两种写法。</h2><p>看看同一份文字怎么从初稿变成定稿。选一次续写，再把字号调到你读着舒服的大小。</p></div>
+      <div id="reading-demo" data-ui class="reader"><p class="sample-status">对话示例</p><h3>给周六的夜游写一条邀请。</h3><p>周六傍晚六点，南门见。带上相机，沿河走到亮灯。</p><small>预设对话，仅在本页演示。</small></div>
     </section>
-    <section class="preferences wrap" aria-labelledby="prefs-title">
-      <h2 id="prefs-title">按你的习惯来。</h2>
-      <div class="details-grid">
-        <figure><img  src="media/appearance-crop.webp" alt="外观设置中的外观模式与主题选项" width="320" height="174" loading="lazy" /><figcaption><strong>调到顺眼为止</strong><p>切换深浅主题，调整聊天字号，找到适合长时间阅读的显示方式。</p></figcaption></figure>
-        <figure><img  src="media/settings-crop.webp" alt="设置里的数据管理入口，包含本机记录、备份与恢复" width="320" height="174" loading="lazy" /><figcaption><strong>把对话带走</strong><p>在设置里导出对话和偏好。换设备时可以导入备份，接着之前的内容聊。</p></figcaption></figure>
-      </div>
+    <section id="connect" class="chapter wrap" aria-labelledby="connect-title">
+      <div class="chapter-intro"><h2 id="connect-title">接入你的<br>模型服务。</h2><p>从服务商取得 API 密钥，在 App 里选择对应的协议并填写地址。能用哪些模型，取决于你的账号权限。</p></div>
+      <div class="connections"><div id="protocols"><h3>支持的接口</h3><p>OpenAI 兼容、OpenAI Responses、Claude Messages、Gemini。</p></div><dl class="facts"><div><dt>模型列表</dt><dd>保存服务配置后自动获取。服务商没有返回列表时，也可以手动填写模型 ID。</dd></div><div><dt>密钥和用量</dt><dd>密钥保存在手机的系统安全存储里。对话发送给你选定的服务商，费用按对方的规则结算。</dd></div><div><dt>换机与备份</dt><dd>在「设置 → 数据管理」导出对话和偏好。备份不含密钥，换机导入后需重新填写。</dd></div></dl></div>
     </section>
-    <section id="install" class="install" aria-labelledby="install-title"><div class="wrap install-inner">
-      <div><h2 id="install-title">安装与更新</h2><p>适用于 Android 7.0 及以上的 ARM64 设备。</p><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK<span aria-hidden="true">↓</span></a><small>v1.0.1 · 构建 4 · 35.7 MB</small></div>
-      <div id="questions"><details open><summary>第一次怎么安装？</summary><p>用安卓浏览器下载安装包，下载完成后打开 APK，在系统提示中确认安装。</p></details><details><summary>装过旧版怎么更新？</summary><p>直接打开新版 APK 并选择「更新」。请保留旧版应用。</p></details><details><summary>iPhone 可以安装吗？</summary><p>iPhone 暂无公开安装版。</p></details></div>
-    </div></section>
+    <div id="inside" class="legacy-anchor"></div>
+    <section id="preview" class="chapter wrap" aria-labelledby="preview-title"><div class="guide chapter-intro"><h2 id="preview-title">看一眼<br>真实界面。</h2><p>在模型列表里挑选下一位帮手，或到设置里调整阅读偏好。</p><div id="preview-controls"></div></div><div id="preview-screen"><figure class="viewer"><img  src="media/models.webp" alt="应用内的模型选择页" width="375" height="811" loading="lazy"></figure></div></section>
+    <section id="install" class="chapter wrap" aria-labelledby="install-title"><div class="chapter-intro"><h2 id="install-title">装到手机上。</h2><p>Android 7.0 及以上，ARM64 设备。</p><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK <span aria-hidden="true">↓</span></a><small>v1.0.1 <b>·</b> 构建 4 <b>·</b> 35.7 MB</small></div><div id="questions"><details open><summary>第一次怎么安装？</summary><p>用安卓浏览器下载并打开 APK，在系统提示中确认安装。</p></details><details><summary>装过旧版怎么更新？</summary><p>保留旧版，打开新版安装包，选择「更新」。也可以在设置中检查更新。</p></details><details><summary>iPhone 可以安装吗？</summary><p>iOS 暂无公开安装版。</p></details></div></section>
   </main>
-  <footer class="wrap foot"><span>Zyhen AI</span><div><a href="latest.json">版本清单</a><a href="#top">返回顶部</a></div></footer>
-</body>
-</html>
+  <footer class="wrap foot"><a class="brand" href="#top">Zyhen<span>AI</span></a><div><a href="latest.json">版本清单</a><a href="#top">回到顶部 ↑</a></div></footer>
+</body></html>

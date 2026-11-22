@@ -1,0 +1,8 @@
+{
+  "applicationId": "app.zyhen.ai",
+  "abi": "arm64-v8a",
+  "version": "1.0.1",
+  "versionCode": 4,
+  "apk": "Zyhen-AI-1.0.1-b4-arm64.apk",
+  "sha256": "9f6a1d4b9ecbb5b18be043f00da6da6a5fd66814ea7548cf3f3989cf8c8472c3"
+}

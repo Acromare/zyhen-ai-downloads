@@ -1,14 +1,51 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fluid Design Excellence</title>
-    <script type="module" crossorigin src="./assets/index-DkdrkDjR.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-azE3X38k.css">
-  </head>
-  <body>
-    <main id="root"></main>
-    <footer lang="zh-CN" class="bg-background py-5 text-center text-sm"><a class="underline underline-offset-4" href="./download.html">Zyhen AI · 安卓下载与安装说明</a></footer>
-  </body>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f7f8fa" />
+  <meta name="description" content="Zyhen AI 安卓官方下载。用自己的 API 密钥接入模型，在手机上切换模型继续对话。" />
+  <link  rel="icon" href="media/icon.png" /><title>Zyhen AI · 安卓官方下载</title>
+  <script type="module" crossorigin src="./assets/index-BfhflkRc.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CSjXtuTY.css">
+</head>
+<body>
+  <header class="wrap mast" id="top">
+    <a class="brand" href="#top"><img  src="media/icon.png" alt="" width="36" height="36" />Zyhen AI</a>
+    <nav aria-label="官网导航"><a href="#preview">功能预览</a><a href="#install">安装与更新</a></nav>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="intro">
+        <h1 id="hero-title">你的模型，<br />随身聊。</h1>
+        <p>在手机上接入你自己的 AI 服务。用一个模型起草，再换一个接着聊。</p>
+        <div class="actions"><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK<span aria-hidden="true">↓</span></a><a class="quiet" href="#preview">看看 App</a></div>
+        <small>v1.0.1 · 35.7 MB · Android 7.0+ · ARM64</small>
+      </div>
+      <figure class="art" aria-label="Zyhen AI 手机应用预览">
+        <picture><img  class="chrome" src="media/liquid-z.webp" alt="" width="800" height="640" /></picture>
+        <video id="reflection" width="800" height="640" muted playsinline preload="none" aria-hidden="true" data-src="media/liquid-z.mp4"></video>
+        <img  class="handset" width="375" height="811" src="media/composer.webp" alt="Zyhen AI 对话首页，输入框内可以选择模型和推理强度" />
+      </figure>
+    </section>
+    <section class="studio" id="preview" aria-labelledby="preview-title">
+      <div class="wrap studio-inner">
+        <div class="guide"><h2 id="preview-title">打开 App<br />看看里面。</h2><p>填好服务地址和密钥，Zyhen 会自动获取可用模型。接下来，就能在对话里切换。</p><div id="preview-controls"></div></div>
+        <div id="preview-screen"><figure class="viewer"><img  src="media/models.webp" alt="可搜索的模型选择列表" width="375" height="811" /><figcaption>模型选择</figcaption></figure></div>
+      </div>
+    </section>
+    <section class="preferences wrap" aria-labelledby="prefs-title">
+      <h2 id="prefs-title">按你的习惯来。</h2>
+      <div class="details-grid">
+        <figure><img  src="media/appearance-crop.webp" alt="外观设置中的外观模式与主题选项" width="320" height="174" loading="lazy" /><figcaption><strong>调到顺眼为止</strong><p>切换深浅主题，调整聊天字号，找到适合长时间阅读的显示方式。</p></figcaption></figure>
+        <figure><img  src="media/settings-crop.webp" alt="设置里的数据管理入口，包含本机记录、备份与恢复" width="320" height="174" loading="lazy" /><figcaption><strong>把对话带走</strong><p>在设置里导出对话和偏好。换设备时可以导入备份，接着之前的内容聊。</p></figcaption></figure>
+      </div>
+    </section>
+    <section id="install" class="install" aria-labelledby="install-title"><div class="wrap install-inner">
+      <div><h2 id="install-title">安装与更新</h2><p>适用于 Android 7.0 及以上的 ARM64 设备。</p><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK<span aria-hidden="true">↓</span></a><small>v1.0.1 · 构建 4 · 35.7 MB</small></div>
+      <div id="questions"><details open><summary>第一次怎么安装？</summary><p>用安卓浏览器下载安装包，下载完成后打开 APK，在系统提示中确认安装。</p></details><details><summary>装过旧版怎么更新？</summary><p>直接打开新版 APK 并选择「更新」。请保留旧版应用。</p></details><details><summary>iPhone 可以安装吗？</summary><p>iPhone 暂无公开安装版。</p></details></div>
+    </div></section>
+  </main>
+  <footer class="wrap foot"><span>Zyhen AI</span><div><a href="latest.json">版本清单</a><a href="#top">返回顶部</a></div></footer>
+</body>
 </html>

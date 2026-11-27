@@ -2,10 +2,10 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#000000"><meta name="description" content="Zyhen AI 是自带密钥的手机 AI 客户端。在同一段对话里切换模型，浏览 App 界面，下载 Android 安装包。">
+  <meta name="theme-color" content="#000000"><meta name="description" content="Zyhen AI 是自带密钥的手机 AI 客户端。在同一段对话里切换模型，打开 iPhone 网页版，或下载 Android 安装包。">
   <link  rel="icon" href="media/icon.png"><title>Zyhen AI · 手机 AI 客户端</title>
-  <script type="module" crossorigin src="./assets/index-BPJARcri.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BKBHxSBo.css">
+  <script type="module" crossorigin src="./assets/index-BeRY33ts.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DDs6SQxK.css">
 </head>
 <body id="top">
   <a class="skip" href="#main">跳到正文</a>
@@ -16,7 +16,11 @@
       <div class="metal-copy wrap">
         <h1 id="hero-title"><span>换个模型，</span><span>接着聊。</span></h1>
         <p>用自己的 API 密钥，在手机上接入常用模型。<br>让一个模型起草，另一个接着改。</p>
-        <div class="metal-actions"><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK <span aria-hidden="true">↓</span></a><a class="metal-secondary" href="#preview">浏览界面 <span aria-hidden="true">↗</span></a></div>
+        <div class="metal-actions"><a class="download" data-zyhen-web-app href="./app/">打开 iPhone 网页版 <span aria-hidden="true">↗</span></a><a class="metal-secondary" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK <span aria-hidden="true">↓</span></a></div>
+        <figure class="web-access" aria-labelledby="web-access-title">
+          <a class="web-qr" href="./app/" aria-label="打开二维码对应的 Zyhen AI 网页版"><img  src="media/iphone-web-qr.png" width="246" height="246" alt="Zyhen AI 网页版访问二维码"></a>
+          <figcaption><strong id="web-access-title">扫码，在 iPhone 上打开</strong><p>用相机扫描二维码。<br>Safari 点「分享」，<br>选择「添加到主屏幕」。</p></figcaption>
+        </figure>
       </div>
       <div class="metal-foot wrap"><div class="metal-strip"><a href="#connect">四种模型接口</a><a href="#features">自动获取模型</a><a href="#install">安装与更新</a></div>
       <div class="metal-meta"><span>v1.0.1 · 35.7 MB · ARM64</span><button type="button" class="edition-toggle" hidden>暂停金属动效</button></div></div>
@@ -52,7 +56,7 @@
       <h2 id="preview-title">界面一览</h2>
       <div id="preview-screen"><figure class="deck-fallback"><img  src="media/composer.webp" alt="Zyhen AI 对话首页" width="375" height="811" loading="lazy"></figure></div>
     </section>
-    <section id="install" class="chapter wrap" aria-labelledby="install-title"><div class="chapter-intro"><h2 id="install-title">装到手机上。</h2><p>Android 7.0 及以上，ARM64 设备。</p><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK <span aria-hidden="true">↓</span></a><small>v1.0.1 <b>·</b> 构建 4 <b>·</b> 35.7 MB</small></div><div id="questions"><details open><summary>第一次怎么安装？</summary><p>用安卓浏览器下载并打开 APK，在系统提示中确认安装。</p></details><details><summary>装过旧版怎么更新？</summary><p>保留旧版，打开新版安装包，选择「更新」。也可以在设置中检查更新。</p></details><details><summary>iPhone 可以安装吗？</summary><p>iOS 暂无公开安装版。</p></details></div></section>
+    <section id="install" class="chapter wrap" aria-labelledby="install-title"><div class="chapter-intro"><h2 id="install-title">装到手机上。</h2><p>Android 7.0 及以上，ARM64 设备。</p><a class="download" href="Zyhen-AI-1.0.1-b4-arm64.apk" download>下载安卓 APK <span aria-hidden="true">↓</span></a><small>v1.0.1 <b>·</b> 构建 4 <b>·</b> 35.7 MB</small></div><div id="questions"><details open><summary>第一次怎么安装？</summary><p>用安卓浏览器下载并打开 APK，在系统提示中确认安装。</p></details><details><summary>装过旧版怎么更新？</summary><p>保留旧版，打开新版安装包，选择「更新」。也可以在设置中检查更新。</p></details><details><summary>iPhone 可以安装吗？</summary><p>可以。<a href="./app/">打开 iPhone 网页版</a>，在 Safari 中点「分享」→「添加到主屏幕」。首次使用时，请在设置中配置自己的模型服务和 API 密钥；服务地址需支持浏览器跨域访问（CORS）。</p></details></div></section>
   </main>
   <footer id="footer" class="motion-footer" aria-labelledby="footer-title">
     <div class="mf-panel">
@@ -65,7 +69,7 @@
         <h2 id="footer-title">准备好开聊了吗？</h2>
         <div class="mf-actions">
           <a class="mf-pill" href="Zyhen-AI-1.0.1-b4-arm64.apk" download><span><svg width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="m7.2 6.9-1.5-2.6.86-.5 1.54 2.65a10.5 10.5 0 0 1 7.8 0l1.54-2.65.86.5-1.5 2.6a9.8 9.8 0 0 1 5 8.2H2.2a9.8 9.8 0 0 1 5-8.2ZM7.7 12a.85.85 0 1 0 0-1.7.85.85 0 0 0 0 1.7Zm8.6 0a.85.85 0 1 0 0-1.7.85.85 0 0 0 0 1.7Z"/></svg>下载安卓版</span></a>
-          <a class="mf-pill" href="#preview"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 3.5h10a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 19V5A1.5 1.5 0 0 1 7 3.5Zm3 14h4" stroke-linejoin="round"/></svg>浏览界面</span></a>
+          <a class="mf-pill" href="./app/"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 3.5h10a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 19V5A1.5 1.5 0 0 1 7 3.5Zm3 14h4" stroke-linejoin="round"/></svg>打开 iPhone 网页版</span></a>
         </div>
         <div class="mf-links"><a href="#connect">支持的模型接口</a><a href="#install">安装与更新</a><a href="latest.json">版本清单</a></div>
       </div>

@@ -1,0 +1,26 @@
+{
+  "id": "/zyhen-ai-downloads/app/",
+  "name": "Zyhen AI",
+  "short_name": "Zyhen AI",
+  "lang": "zh-CN",
+  "description": "用自己的模型接口，在 iPhone 上对话。",
+  "start_url": "/zyhen-ai-downloads/app/",
+  "scope": "/zyhen-ai-downloads/app/",
+  "display": "standalone",
+  "background_color": "#0D0E10",
+  "theme_color": "#0D0E10",
+  "icons": [
+    {
+      "src": "/zyhen-ai-downloads/app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/zyhen-ai-downloads/app/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
